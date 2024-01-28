@@ -10,6 +10,7 @@ https://github.com/tanmaysuryawanshi/DashboardApp/assets/93265845/d1089d67-9e5d-
 - Dagger Hilt for dependency injection
 - Retrofit for api calls
 - Coroutines
+- Livedata
 
 ### Structure  
 ```
