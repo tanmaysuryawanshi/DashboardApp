@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_marginTop="20dp"
+    android:layout_marginHorizontal="16dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rvitemImageCard"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+android:scaleType="centerCrop"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+<TextView
+    android:id="@+id/linkNameRvitemTV"
+    tool:text="Sample Link Name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:ellipsize="end"
+app:layout_constraintTop_toTopOf="@+id/rvitemImageCard"
+    app:layout_constraintStart_toEndOf="@+id/rvitemImageCard"
+    app:layout_constraintEnd_toStartOf="@+id/clicksCountRvitemTV"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="40dp"
+    android:textSize="14sp"
+    android:textColor="@color/black"
+    app:layout_constraintHorizontal_bias="0"
+    />
+    <TextView
+        android:id="@+id/linkDateRvitem"
+        tool:text="12 August 2024"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/linkNameRvitemTV"
+        app:layout_constraintStart_toStartOf="@+id/linkNameRvitemTV"
+        app:layout_constraintEnd_toStartOf="@+id/clickTVRvitem"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintHorizontal_bias="0"
+        />
+
+    <TextView
+        android:id="@+id/clicksCountRvitemTV"
+        tool:text="1234"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/rvitemImageCard"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/clickTVRvitem"
+        android:text="Clicks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/clicksCountRvitemTV"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="14dp"
+       android:background="@drawable/cardview_background_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvitemImageCard"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:id="@+id/linkAddressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           tool:text="httpsasdfasdfadsf"
+            android:textColor="@color/blue"
+            android:layout_gravity="start"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:ellipsize="end"/>
+
+        <ImageView
+            android:id="@+id/copyImageView"
+            android:layout_gravity="end|center_vertical"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/copylink_icon"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

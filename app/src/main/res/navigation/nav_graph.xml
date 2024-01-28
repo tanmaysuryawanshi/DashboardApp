@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/LinkFragment">
+    <fragment
+        android:id="@+id/LinkFragment"
+        android:name="com.tanmaysuryawanshi.dashboard.dashboardfeature.presentation.fragments.LinksFragment"
+        android:label="links Fragment" >
+        <action
+            android:id="@+id/action_LinkFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.tanmaysuryawanshi.dashboard.dashboardfeature.presentation.fragments.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_LinkFragment"
+            app:destination="@id/LinkFragment" />
+    </fragment>
+
+</navigation>
